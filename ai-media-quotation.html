@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹사이트 제작_견적서_(주)에이아이미디어</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #fff;
+            line-height: 1.4;
+        }
+        
+        .quotation-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            border: 2px solid #000;
+            padding: 0;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 15px;
+            font-size: 22px;
+            font-weight: bold;
+            border-bottom: 2px solid #000;
+            background-color: #f8f9fa;
+        }
+        
+        .client-supplier {
+            display: flex;
+            border-bottom: 1px solid #000;
+        }
+        
+        .client-info, .supplier-info {
+            flex: 1;
+            padding: 20px;
+        }
+        .client-name {
+            font-size: 1.25em;
+            margin-bottom: 15px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        
+        .supplier-info {
+            position: relative;
+            border-left: 1px solid #000;
+        }
+        
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .info-table td {
+            padding: 6px 10px;
+            border: 1px solid #ccc;
+            font-size: 13px;
+        }
+        
+        .info-table td:first-child {
+            background: #f0f0f0;
+            font-weight: bold;
+            width: 90px;
+        }
+        
+        .section-title {
+            background: #f0f0f0;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            font-size: 15px;
+        }
+        
+        .sub-section-title {
+            padding: 15px 20px 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .table-note {
+            text-align: right;
+            font-size: 11px;
+            color: #666;
+            padding-right: 20px;
+            margin-bottom: 5px;
+        }
+        
+        .main-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        
+        .main-table th, .main-table td {
+            border: 1px solid #000;
+            padding: 12px 10px;
+            text-align: center;
+        }
+        
+        .main-table th {
+            background: #f8f9fa;
+            font-weight: bold;
+        }
+        
+        .total-row {
+            background: #f0f0f0;
+            font-weight: bold;
+        }
+        
+        .final-total {
+            background: #333;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        
+        .amount {
+            text-align: right;
+            padding-right: 15px !important;
+        }
+        
+        .left-align {
+            text-align: left;
+            padding-left: 15px !important;
+        }
+
+        .notes {
+            padding: 20px;
+            font-size: 13px;
+        }
+        
+        .notes p {
+            margin: 8px 0;
+        }
+        
+        .company-stamp {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            right: 30px;
+            top: 70px;
+            opacity: 0.8;
+        }
+
+        .project-summary {
+            padding: 15px 20px;
+            font-size: 13px;
+            border-bottom: 1px solid #000;
+        }
+
+        .maintenance-section {
+            border-top: 1px solid #000;
+        }
+
+        ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+
+        .footer-info {
+            background-color: #f8f9fa;
+            padding: 15px 20px;
+            font-size: 12px;
+            border-top: 1px solid #000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="quotation-container">
+        <div class="header">
+            견 적 서
+        </div>
+        
+        <div class="client-supplier">
+            <div class="client-info">
+                <p>
+                    <span class="client-name">(주)에이아이미디어</span>
+                    <span> 귀중</span>
+                </p>
+                <table class="info-table">
+                    <tr>
+                        <td>프로젝트명</td>
+                        <td style="font-weight: bold;">AI 챗봇 통합형 웹사이트 리뉴얼</td>
+                    </tr>
+                    <tr>
+                        <td>견적일자</td>
+                        <td>2026년 01월 19일</td>
+                    </tr>
+                    <tr>
+                        <td>제작기간</td>
+                        <td>착수일로부터 30영업일</td>
+                    </tr>
+                    <tr>
+                        <td>유효기간</td>
+                        <td>견적일로부터 30일</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="supplier-info">
+                <h3>공급자</h3>
+                <table class="info-table">
+                    <tr>
+                        <td>상호</td>
+                        <td>오에이디자인스튜디오</td>
+                    </tr>
+                    <tr>
+                        <td>등록번호</td>
+                        <td>404-43-01076</td>
+                    </tr>
+                    <tr>
+                        <td>대표자</td>
+                        <td>백종훈</td>
+                    </tr>
+                    <tr>
+                        <td>연락처</td>
+                        <td>010-3432-4396</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 11px;">주소</td>
+                        <td style="font-size: 11px;">서울시 강서구 강서로47길 165, 9층 901-667호</td>
+                    </tr>
+                </table>
+                <img src="./개인도장_원형1.png" class="company-stamp" alt="회사 도장">
+            </div>
+        </div>
+
+        <div class="section-title">1. 웹사이트 리뉴얼 제작 견적</div>
+        <div class="table-note">(단위: 원 / VAT 별도)</div>
+        <table class="main-table">
+            <thead>
+                <tr>
+                    <th width="8%">순번</th>
+                    <th width="15%">구분</th>
+                    <th>내용</th>
+                    <th width="20%">금액 (공급가액)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><b>기획</b></td>
+                    <td class="left-align">상세 스토리보드 설계, UI/UX 기획 및 PM</td>
+                    <td class="amount">1,200,000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><b>디자인</b></td>
+                    <td class="left-align">메인 및 서브페이지 UI/UX 최적화 디자인</td>
+                    <td class="amount">2,000,000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><b>퍼블리싱</b></td>
+                    <td class="left-align">반응형 웹 UI 개발 및 인터랙션 퍼블리싱</td>
+                    <td class="amount">1,600,000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><b>개발</b></td>
+                    <td class="left-align">Gemini AI 연동, GAS 로직 및 DB 시스템 구축</td>
+                    <td class="amount">2,400,000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><b>기타</b></td>
+                    <td class="left-align">통합 테스트, 배포 최적화 및 최종 검수</td>
+                    <td class="amount">800,000</td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="3">공급가액 합계</td>
+                    <td class="amount">8,000,000</td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="3">부가가치세 (10%)</td>
+                    <td class="amount">800,000</td>
+                </tr>
+                <tr class="final-total">
+                    <td colspan="3">총 합계 금액 (부가세 포함)</td>
+                    <td class="amount">8,800,000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="section-title" style="margin-top: 15px;">2. 유지보수 서비스 안내</div>
+        <div class="project-summary">안정적인 웹사이트 운영 및 인프라 관리를 위한 서비스 구성입니다.</div>
+        <table class="main-table">
+            <thead>
+                <tr>
+                    <th width="20%">구분</th>
+                    <th>서비스 내용</th>
+                    <th width="25%">제공 범위</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>운영 관리</b></td>
+                    <td class="left-align">웹사이트 운영 상태 확인 및 가동률 관리</td>
+                    <td>정기적 점검</td>
+                </tr>
+                <tr>
+                    <td><b>콘텐츠 관리</b></td>
+                    <td class="left-align">텍스트, 이미지 등 기본적인 내용 수정 반영</td>
+                    <td>월 2회 범위 내</td>
+                </tr>
+                <tr>
+                    <td><b>서버 및 인프라 관리</b></td>
+                    <td class="left-align">서버 및 GAS API 인프라 모니터링</td>
+                    <td>정기적 관리</td>
+                </tr>
+                <tr>
+                    <td><b>기술 지원</b></td>
+                    <td class="left-align">웹사이트 및 AI 연동 관련 기술적 상담</td>
+                    <td>업무시간 내 응답</td>
+                </tr>
+                <tr>
+                    <td><b>기타 지원</b></td>
+                    <td class="left-align">운영 중 발생하는 기타 기술 협의 업무</td>
+                    <td>협의 후 제공</td>
+                </tr>
+                <tr class="total-row">
+                    <td>유지보수 비용</td>
+                    <td colspan="2" class="left-align">
+                        <b>A안 (정기):</b> 월 300,000원 (VAT 별도) <br>
+                        <b>B안 (건별):</b> 작업 난이도에 따라 별도 협의 (최소 50,000원~, VAT 별도)
+                        <br>
+                         <span style="background-color: #ffffae;">건별 작업(B안) 선택 시, DB 및 배포용 서버 구축을 위한 구글(Gmail) 계정 제공 필수.</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="section-title" style="margin-top: 15px;">3. 클라이언트 제공 및 협조 사항</div>
+        <div class="notes">
+            <ul>
+                <li><b>콘텐츠:</b> 각 메뉴별 텍스트 문구 및 디자인 원본 소스(로고 등).</li>
+                <li><b>데이터:</b> AI 챗봇 학습용 FAQ 기초 데이터(엑셀 또는 시트).</li>
+                <li><b>권한:</b> 도메인 구매 계정, Gemini API 사용 설정 및 키 제공.</li>
+            </ul>
+        </div>
+
+        <div class="section-title">4. 기타 사항</div>
+        <div class="notes">
+            <ul>
+                <li><b>지불 조건:</b> 계약 시 선금 50%(440만 원), 검수 완료 후 잔금 50%(440만 원) 지급.</li>
+                <li><b>하자 보수:</b> 프로젝트 종료 후 3개월간 기능적 결함에 대한 무상 수리 보증.</li>
+                <li><b>입금 계좌:</b> 국민은행 584101-01-0315079 (예금주: 백종훈)</li>
+            </ul>
+        </div>
+
+        <div class="footer-info">
+            본 견적서는 발행일로부터 30일간 유효합니다.
+        </div>
+    </div>
+</body>
+</html>
